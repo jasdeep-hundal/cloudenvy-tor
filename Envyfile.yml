@@ -1,0 +1,12 @@
+project_config:
+  name: tor_relay
+  image: Ubuntu Precise 12.04 LTS Server 64-bit 20120424
+  remote_user: ubuntu
+  flavor_name: standard.xsmall
+  provision_scripts:
+    - ./scripts/install_tor.sh
+  sec_groups: [
+    'icmp, -1, -1, 0.0.0.0/0',
+    'tcp, 22, 22, 0.0.0.0/0',
+    'tcp, 80, 80, 0.0.0.0/0'
+  ]

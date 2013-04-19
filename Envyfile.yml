@@ -5,6 +5,8 @@ project_config:
   flavor_name: standard.xsmall
   provision_scripts:
     - ./scripts/install_tor.sh
+  files:
+    torrc: '~'
   sec_groups: [
     'icmp, -1, -1, 0.0.0.0/0',
     'tcp, 22, 22, 0.0.0.0/0',

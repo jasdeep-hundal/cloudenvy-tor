@@ -1,10 +1,11 @@
 project_config:
   name: tor_relay
-  image: Ubuntu Precise 12.04 LTS Server 64-bit 20120424
+  image: Ubuntu Quantal 12.10 Server 64-bit 20121017 (b)
   remote_user: ubuntu
   flavor_name: standard.xsmall
   provision_scripts:
     - ./scripts/install_tor.sh
+    - ./scripts/setup_relay.sh
   files:
     torrc: '~'
   sec_groups: [

@@ -14,7 +14,8 @@ Usage Requirements/Notes
 ------------------------
 Requires a cloudenvy install that is set up to talk to some OpenStack cloud.
 Just run `envy up` in the base directory of this repo after configuring
-Envyfile.yml based on the instances/images you have available. A lot more info
-(such as how to run multiple instances) can be found at
+Envyfile.yml based on the settings for your OpenStack cloud and the images you
+have available. The default Envyfile is made to work on the HP Cloud.
+A lot more info (such as how to run multiple instances) can be found at
 https://github.com/cloudenvy/cloudenvy
 
